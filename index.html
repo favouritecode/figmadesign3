@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and container styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: white;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        /* Title and paragraph styling */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        /* Gallery grid styling */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Discover the beauty <br> around the world</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus in libero risus semper habitant arcu eget. <br> Et integer facilisi eget diam.</p>
+        <a href="#" class="btn">Explore</a>
+        <div class="gallery">
+            <img src="img/4.jpeg" alt="Image 1">
+            <img src="img/2.jpeg" alt="Image 2">
+            <img src="img/3.jpeg" alt="Image 3">
+            <img src="img/4.jpeg" alt="Image 4">
+            <img src="img/4.jpeg" alt="Image 1">
+            <img src="img/2.jpeg" alt="Image 2">
+            <img src="img/3.jpeg" alt="Image 3">
+            <img src="img/4.jpeg" alt="Image 4">
+        </div>
+    </div>
+</body>
+</html>
